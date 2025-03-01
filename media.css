@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 5px 10px;
+    letter-spacing: 4px;
+  }
+  #navbar > h1{
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .navbarLinks {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+  }
+  .navbarLinks > p{
+    font-weight: 600;
+
+  }
+  #image1 {
+    width: 100%;
+    padding: 10px;
+  }
+  #image1 > img {
+    width: 100%;
+  }
+  .br{
+    font-size: 40px;
+    font-weight: 500;
+    background-color: rgba(0,0,0, 0.8);
+    color: white;
+    letter-spacing: 4px;
+    padding: 5px 20px;
+    position: relative;
+    bottom: 430px;
+    left: 600px;
+  }
+  .architect{
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    bottom:430px ;
+    left:600px ;
+  }
+
+  /* --------------------------------------------------------- */
+  
+  #projects-Section {
+    padding: 10px;
+  }
+  
+  .projects-images > img {
+    width: 100%;
+  }
+  
+  #projects > .projects-images {
+    position: relative;
+    width: 100%;
+  }
+  
+  .projects-images > span {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .AboutCards {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    font-family:Verdana,sans-serif; 
+  }
+  .AboutCards1 {
+    /* background-color: rgb(237, 235, 235); */
+    padding: 10px;
+    line-height: 25px;
+  }
+  .AboutCards1 > img {
+    width: 100%;
+  }
+  .AboutCards1 > h3{
+    font-family:Verdana,sans-serif; 
+  }
+  .AboutCards1 > p{
+    font-family:Verdana,sans-serif; 
+  }
+  .AboutCards1 > span {
+    display: block;
+    text-align: center;
+    background-color: grey;
+    padding: 5px 0px;
+    font-family:Verdana,sans-serif; 
+  }
+  .AboutCards1 > span:hover {
+    background-color: lightblue;
+  }
+  #contacts{
+     font-family:Verdana,sans-serif;
+     font-weight: 400; 
+  }
+  .contact-input {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-input > input {
+    margin: 16px 0px;
+    padding: 10px;
+  }
+  .contacts-msg {
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+    margin-left: 9px;
+  }
+  #map{
+      padding: 10px;
+    }
+   #map > img{
+      width: 100%;
+   } 
+  .footer{
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      text-transform: capitalize;
+      height: 15vh;
+      text-decoration: underline;
+  }
+  @media (max-width: 450px) /*mobile view */ {
+    #navbar{
+        letter-spacing: 2px;
+    }
+    #navbar > h1 {
+      font-size: 15px;
+    }
+    #navbar > .navbarLinks {
+      font-size: 10px;
+    }
+    .navbarLinks{
+        column-gap: 15px;
+    }
+    #image1 {
+      width: 100%;
+      padding: 10px;
+    }
+    #image1 > img {
+      width: 100%;
+    }
+    .br{
+        font-size: 20px;
+        background-color: rgba(0,0,0, 0.8);
+        color: white;
+        padding: 2px 7px;
+        position: relative;
+        bottom: 135px;
+        left: 170px;
+    }
+    .architect{
+        font-size: 20px;
+        position: relative;
+        bottom: 135px;
+        left: 170px;
+        color: white;
+    }
+    #projects {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .projects-images > span {
+      padding: 5px 7px;
+    }
+    #aboutSection {
+      line-height: 30px;
+    }
+    .AboutCards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .AboutCards1 {
+      line-height: 30px;
+    }
+    .contacts-msg{
+      padding: 8px 16px;
+    }
+   
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px)
+    {
+    .br{
+        font-size: 30px;
+        position: relative;
+        bottom: 240px;
+        left: 260px;
+    }
+    .architect{
+        font-size: 30px;
+        position: relative;
+        bottom: 240px;
+        left: 260px;
+    }
+    #projects {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      width: 100%;
+    }
+    .AboutCards {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    #aboutSection {
+      line-height: 25px;
+    }
+    .contacts-msg {
+      padding: 8px 20px;
+    }
+   
+  }
+  @media (min-width:1025px){
+    .navbarlinks{
+        column-gap: 80px;
+    }
+    .br{
+        position: relative;
+        bottom: 330px;
+        left: 410px;
+    }
+    .architect{
+        position: relative;
+        bottom: 330px;
+        left: 410px;
+    }
+    #projects {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        width: 100%;
+      }
+      .AboutCards {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      #aboutSection {
+        line-height: 25px;
+      }
+      .contacts-msg {
+        padding: 8px 20px;
+      }
+  }
+  @media (min-width:1439px){
+    .navbarlinks{
+        column-gap: 80px;
+    }
+    .br{
+        font-size: 40px;
+        position: relative;
+        bottom: 430px;
+        left: 600px;
+    }
+    .architect{
+        position: relative;
+        bottom: 430px;
+        left: 600px;
+    }
+    #projects {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        width: 100%;
+      }
+      .AboutCards {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      #aboutSection {
+        line-height: 25px;
+      }
+      .contacts-msg {
+        padding: 8px 20px;
+      }
+  }
